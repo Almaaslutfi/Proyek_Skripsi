@@ -13,7 +13,6 @@ jobs:
       - name: 📂 Sync files
         uses: burnett01/rsync-deployments@6.0.0
         with:
-          switches: rsync -avz
           path: /
           remote_path: ${{ secrets.DEPLOY_PATH }}
           remote_host: ${{ secrets.DEPLOY_HOST }}
