@@ -3,19 +3,19 @@ on:
     branches: [main]
 name: 🚀 Deploy website on push by SSH
 jobs:
-  web-deploy:
-    name: 🎉 Auto Deploy
+  deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: 🚚 Get latest code
-        uses: actions/checkout@v3
+    - name: 🚚 Get latest code
+      uses: actions/checkout@v3
 
-      - name: 📂 Sync files
-        uses: burnett01/rsync-deployments@6.0.0
-        with:
-          path: /
-          remote_path: ${{ secrets.DEPLOY_PATH }}
-          remote_host: ${{ secrets.DEPLOY_HOST }}
-          remote_user: ${{ secrets.DEPLOY_USER }}
-          remote_key: ${{ secrets.DEPLOY_KEY }}
-          remote_port: ${{ secrets.DEPLOY_PORT }}
+    - name: 📂 Sync files
+      uses: burnett01/rsync-deployments@6.0.0
+      with:
+        switches: -avzr --delete
+        path: src/
+        remote_path: ${{ secrets.DEPLOY_PATH }}
+        remote_host: ${{ secrets.DEPLOY_HOST }}
+        remote_port: ${{ secrets.DEPLOY_PORT }}
+        remote_user: ${{ secrets.DEPLOY_USER }}
+        remote_key: ${{ secrets.DEPLOY_KEY }}
