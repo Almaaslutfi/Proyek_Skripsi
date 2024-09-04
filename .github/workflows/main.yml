@@ -12,5 +12,5 @@ jobs:
       uses: SamKirkland/FTP-Deploy-Action@v4.3.5
       with:
         server: ftp.almas-cicd.my.id
-        username: almascicd@almas-cicd.my.id
-        password: almascicd24
+        username: almascif
+        password: almaspanel24
