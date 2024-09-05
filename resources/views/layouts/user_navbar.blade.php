@@ -5,7 +5,7 @@
   
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto {{ Request::is('beranda') ? 'active' : '' }}" href="{{route('beranda')}}">Beranda Update</a></li>
+          <li><a class="nav-link scrollto {{ Request::is('beranda') ? 'active' : '' }}" href="{{route('beranda')}}">Beranda</a></li>
           <li><a class="nav-link scrollto {{ Request::is('layanan') ? 'active' : '' }}" href="{{route('layanan')}}">Layanan</a></li>
           <li><a class="nav-link scrollto {{ Request::is('event-kami') ? 'active' : '' }}" href="{{route('event-kami')}}">Event</a></li>
           <li><a class="nav-link scrollto {{ Request::is('galeri-kami') ? 'active' : '' }}" href="{{route('galeri-kami')}}">Galeri</a></li>
