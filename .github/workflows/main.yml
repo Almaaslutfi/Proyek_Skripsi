@@ -1,8 +1,25 @@
 on: push
-name: 🚀 Deploy website on push
+name: 🚀 CI/CD Website
 jobs:
+  check-env:
+    name: 🔍 Check .env File
+    runs-on: ubuntu-latest
+    steps:
+      - name: 🚚 Get latest code
+        uses: actions/checkout@v4
+
+      # Pengecekan keberadaan file .env
+      - name: 🔍 Check if .env file exists
+        run: |
+          if [ ! -f .env ]; then
+            echo ".env file is missing!"
+            exit 1
+          else
+            echo ".env file found!"
+          fi
+          
   web-deploy:
-    name: 🎉 Deploy
+    name: 🎉 Continous Deploy
     runs-on: ubuntu-latest
     steps:
       - name: 🚚 Get latest code
