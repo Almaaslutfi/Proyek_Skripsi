@@ -1,25 +1,25 @@
 on: push
 name: 🚀 CI/CD Website
 jobs:
-  check-env:
-    name: 🔍 Check .env File
+  check-web-routes:
+    name: 🔍 Check routes/web.php File
     runs-on: ubuntu-latest
     steps:
       - name: 🚚 Get latest code
         uses: actions/checkout@v4
 
-      # Pengecekan keberadaan file .env
-      - name: 🔍 Check if .env file exists
+      # Pengecekan keberadaan file routes/web.php
+      - name: 🔍 Check if routes/web.php file exists
         run: |
-          if [ ! -f .env ]; then
-            echo ".env file is missing!"
+          if [ ! -f routes/web.php ]; then
+            echo "routes/web.php file is missing!"
             exit 1
           else
-            echo ".env file found!"
+            echo "routes/web.php file found!"
           fi
           
   web-deploy:
-    name: 🎉 Continous Deploy
+    name: 🎉 Continuous Deploy
     runs-on: ubuntu-latest
     steps:
       - name: 🚚 Get latest code
@@ -30,4 +30,4 @@ jobs:
         with:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USER }}
-          password: ${{ secrets.FTP_PASSWORD }}
+          password: ${{ secrets.FTP_PASSWORD }}
