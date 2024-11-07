@@ -1,29 +1,29 @@
 on: push
 name: 🚀 CI/CD Website
 jobs:
-  check-web-routes:
-    name: 🔍 Check routes/web.php File
-    runs-on: ubuntu-latest
-    steps:
-      - name: 🚚 Get latest code
-        uses: actions/checkout@v3
+  # check-web-routes:
+  #   name: 🔍 Check routes/web.php File
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - name: 🚚 Get latest code
+  #       uses: actions/checkout@v4
 
-      # Pengecekan keberadaan file routes/web.php
-      - name: 🔍 Check if routes/web.php file exists
-        run: |
-          if [ ! -f routes/web.php ]; then
-            echo "routes/web.php file is missing!"
-            exit 1
-          else
-            echo "routes/web.php file found!"
-          fi
-          
+  #     # Pengecekan keberadaan file routes/web.php
+  #     - name: 🔍 Check if routes/web.php file exists
+  #       run: |
+  #         if [ ! -f routes/web.php ]; then
+  #           echo "routes/web.php file is missing!"
+  #           exit 1
+  #         else
+  #           echo "routes/web.php file found!"
+  #         fi
+       
   web-deploy:
     name: 🎉 Continuous Deploy
     runs-on: ubuntu-latest
     steps:
       - name: 🚚 Get latest code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: 📂 Sync files
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
