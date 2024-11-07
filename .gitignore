@@ -1,7 +1,24 @@
-/node_modules
+# Laravel specific
 /vendor
+/node_modules
+/public/storage
+/storage/*.key
 .env
-.phpunit.result.cache
-/.fleet
+Homestead.yaml
+Homestead.json
+/.vagrant
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Editor-specific files
 /.idea
 /.vscode
+*.swp
+
+# PHPUnit result cache
+.phpunit.result.cache
+
+# Others
+/.fleet
