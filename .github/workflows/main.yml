@@ -1,4 +1,7 @@
-on: push
+on: 
+  push:
+    branches: [main]
+
 name: 🚀 CI/CD Website
 jobs:
   check-web-routes:
@@ -8,7 +11,6 @@ jobs:
       - name: 🚚 Get latest code
         uses: actions/checkout@v4
 
-      # Pengecekan keberadaan file routes/web.php
       - name: 🔍 Check if routes/web.php file exists
         run: |
           if [ ! -f routes/web.php ]; then
@@ -17,18 +19,18 @@ jobs:
           else
             echo "routes/web.php file found!"
           fi
-
+              
   web-deploy:
     name: 🎉 Continuous Deploy
     runs-on: ubuntu-latest
+    needs: check-web-routes
     steps:
       - name: 🚚 Get latest code
         uses: actions/checkout@v4
-
+    
       - name: 📂 Sync files
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USER }}
-          password: ${{ secrets.FTP_PASSWORD }}
-          server-dir: /
+          password: ${{ secrets.FTP_PASSWORD }}
