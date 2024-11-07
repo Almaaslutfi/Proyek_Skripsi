@@ -35,4 +35,4 @@ jobs:
           username: ${{ secrets.FTP_USER }}
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./ 
-          server-dir: ./home/almascif/public_html/cicd.almas-cicd.my.id/
+          server-dir: /home/almascif/public_html/cicd.almas-cicd.my.id/
