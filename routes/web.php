@@ -133,10 +133,6 @@ Route::get('/storage', function () {
 });
 
 Route::get('/clear', function () {
-    Artisan::call('config:clear');
-    Artisan::call('route:clear');
-    Artisan::call('view:clear');
-    Artisan::call('cache:clear');
-    Artisan::call('optimize');
+    Artisan::call('optimize:clear');
     return 'Application optimized successfully!';
 });
