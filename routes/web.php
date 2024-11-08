@@ -25,6 +25,16 @@ Route::get('/', function () {
     return view('welcome');
 })->name('beranda');
 
+Route::get('/storage', function () {
+    Artisan::call('storage:link');
+    return 'Storage link created successfully!';
+});
+
+Route::get('/clear', function () {
+    Artisan::call('optimize');
+    return 'Application optimized successfully!';
+});
+
 // Auth::routes();
 // Auth::routes();
 // Route::get('/verify', [App\Http\Controllers\DashboardController::class, 'verify'])->name('verification.verify');
