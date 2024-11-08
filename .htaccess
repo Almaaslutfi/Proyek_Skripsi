@@ -1,13 +1,10 @@
 <IfModule mod_rewrite.c>
-# That was ONLY to protect you from 500 errors
-# if your server did not have mod_rewrite enabled
+    RewriteEngine On
 
-RewriteEngine On
-# RewriteBase /
-# NOT needed unless you're using mod_alias to redirect
+    # Uncomment and set this if Laravel is installed in a subdirectory (e.g., /myapp/)
+    # RewriteBase /myapp/
 
-RewriteCond %{REQUEST_URI} !/public
-RewriteRule ^(.*)$ public/$1 [L]
-# Direct all requests to /public folder
-
+    # Redirect requests that are not already in /public to /public
+    RewriteCond %{REQUEST_URI} !^/public/
+    RewriteRule ^(.*)$ /public/$1 [L]
 </IfModule>
