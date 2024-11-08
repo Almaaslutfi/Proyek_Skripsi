@@ -25,16 +25,6 @@ Route::get('/', function () {
     return view('welcome');
 })->name('beranda');
 
-Route::get('/storage', function () {
-    Artisan::call('storage:link');
-    return 'Storage link created successfully!';
-});
-
-Route::get('/clear', function () {
-    Artisan::call('optimize');
-    return 'Application optimized successfully!';
-});
-
 // Auth::routes();
 // Auth::routes();
 // Route::get('/verify', [App\Http\Controllers\DashboardController::class, 'verify'])->name('verification.verify');
@@ -135,3 +125,18 @@ Route::get('/email/verify', function () {
     $galeri = Galeri::get();
     return view('auth.verify', compact('user', 'artikel', 'galeri'));
 })->name('verification.notice');
+
+
+Route::get('/storage', function () {
+    Artisan::call('storage:link');
+    return 'Storage link created successfully!';
+});
+
+Route::get('/clear', function () {
+    Artisan::call('config:clear');
+    Artisan::call('route:clear');
+    Artisan::call('view:clear');
+    Artisan::call('cache:clear');
+    Artisan::call('optimize');
+    return 'Application optimized successfully!';
+});
