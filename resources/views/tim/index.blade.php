@@ -7,7 +7,7 @@
 
         <div class="section-title">
             <h2>Tim Kerja</h2>
-            <p>Tim Kerja Kami</p>
+            <p>Bagian Tim Kerja Kami</p>
         </div>
 
         <div class="row">
