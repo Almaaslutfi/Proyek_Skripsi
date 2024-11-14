@@ -4,7 +4,7 @@
     <div class="container" data-aos="fade-up">
         <div class="section-title">
             <h2>Galeri</h2>
-            <p>Cek Galeri Kami</p>
+            <p>Galeri Kami</p>
         </div>
 
         <div class="row" data-aos="fade-up" data-aos-delay="100">
