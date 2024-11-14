@@ -4,7 +4,7 @@
     <div class="container" data-aos="fade-up">
         <div class="section-title">
         <h2>Event</h2>
-        <p>Ikuti Event Kami</p>
+        <p>Ayo Ikuti Event Kami</p>
         </div>
 
     <div class="container">
