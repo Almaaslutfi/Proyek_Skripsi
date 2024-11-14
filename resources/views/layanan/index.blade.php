@@ -6,7 +6,7 @@
 
       <div class="section-title">
         <h2>Layanan</h2>
-        <p>Layanan Kami</p>
+        <p>Cek Layanan Kami</p>
       </div>
 
       <div class="row align-items-center">
