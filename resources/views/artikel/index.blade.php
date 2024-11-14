@@ -16,7 +16,7 @@
     <div class="container" data-aos="fade-up">
         <div class="section-title">
             <h2>Artikel</h2>
-            <p>Artikel Kami</p>
+            <p>Cek Artikel Kami</p>
         </div>
         <div class="row g-5">
             <!-- Kolom Konten Artikel -->
