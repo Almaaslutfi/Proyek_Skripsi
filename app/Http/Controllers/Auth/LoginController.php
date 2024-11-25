@@ -30,14 +30,14 @@ class LoginController extends Controller
      */
 
     protected function credentials(Request $request){
-        $validator = Validator::make($request->all(),[
-            $this->username()=>'required|string|email',
-            'password'=>'required|string',
-        ]);
-        if($validator->fails()){
-            throw ValidationException::withMessages([$this->username()=>['Please enter a valid email']]);
-        }
-        return $request->only($this->username(), 'password');
+        // $validator = Validator::make($request->all(),[
+        //     $this->username()=>'required|string|email',
+        //     'password'=>'required|string',
+        // ]);
+        // if($validator->fails()){
+        //     throw ValidationException::withMessages([$this->username()=>['Please enter a valid email']]);
+        // }
+        // return $request->only($this->username(), 'password');
     }
     protected $redirectTo = '/dashboard';
 
