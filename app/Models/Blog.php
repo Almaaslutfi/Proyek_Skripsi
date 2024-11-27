@@ -12,9 +12,9 @@ class Blog extends Model
 
     protected $table = 'blogs';
     protected $fillable = [
-        // 'user_id',
-        // 'penulis',
-        // 'kategori_id'
+        'user_id',
+        'penulis',
+        'kategori_id'
     ];
 
     public function user()

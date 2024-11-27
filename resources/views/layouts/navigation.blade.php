@@ -26,7 +26,7 @@
         @can('artikel-index')
         <li class="nav-item">
             <a href="{{route('artikel')}}" class="mininav-toggle nav-link {{ Route::is('artikel') ? 'active' : ''  }}" id="menuArtikel"><i class="bi bi-newspaper fs-5 me-2"></i>
-                <span class="nav-label ms-1">Artikel Blog</span>
+                <span class="nav-label ms-1">Artikel</span>
             </a>
         </li>
         @endcan

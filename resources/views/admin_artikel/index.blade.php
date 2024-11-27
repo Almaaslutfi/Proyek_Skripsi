@@ -5,7 +5,7 @@
     <div class="d-flex flex-column m-3">
         <div class="card bg-transparent">
             <p class="text-white fs-5">Artikel</p>
-            <h3 class="text-white" class="fw-bold">Data Artikel Blog</h3>
+            <h3 class="text-white" class="fw-bold">Data Artikel</h3>
         </div>
        
             <div class="content__boxed">
