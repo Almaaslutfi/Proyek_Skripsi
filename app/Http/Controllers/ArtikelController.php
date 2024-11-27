@@ -58,7 +58,7 @@ class ArtikelController extends Controller
 
         $data->save();
 
-        return redirect()->back()->with('status', 'Artikel berhasil dibuat!');
+        return redirect()->back()->with('status', 'Artikel blog berhasil dibuat!');
     }
 
     public function update(Request $request, $id)
