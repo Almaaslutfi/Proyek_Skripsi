@@ -19,7 +19,7 @@ class DashboardController extends Controller
     {
         $alldata = User::count();
         $artikel = Blog::count();
-        $galeri = Galeri::count();
+        // $galeri = Galeri::count();
 
         $artikelTerbaru = Blog::latest()->take(3)->get();
         

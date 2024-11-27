@@ -13,7 +13,7 @@
         @else --}}
         <li class="nav-item">
             <a href="{{route('dashboard')}}" class="mininav-toggle nav-link {{ Route::is('dashboard') ? 'active' : ''  }}" id="menuHome"><i class="demo-pli-home fs-5 me-2"></i>
-                <span class="nav-label ms-1">Dashboard</span>
+                {{-- <span class="nav-label ms-1">Dashboard</span> --}}
             </a>
         </li>
         @can('user-index')
