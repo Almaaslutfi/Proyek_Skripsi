@@ -47,7 +47,7 @@ class EventController extends Controller
         $data->created_by = Auth::user()->id;
         $data->save();
 
-        return back()->with('status', 'Event berhasil dibuat!');
+        return back()->with('status', 'Event acara berhasil dibuat!');
     }
 
     public function update(Request $request, $id)

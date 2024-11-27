@@ -14,13 +14,13 @@ class Event extends Model
     protected $guarded = ['id'];
 
     protected $fillable = [
-        'nama',
-        'tempat',
-        'tanggal_mulai',
-        'tanggal_akhir',
-        'waktu_mulai',
-        'waktu_akhir',
-        'status_id',
+        // 'nama',
+        // 'tempat',
+        // 'tanggal_mulai',
+        // 'tanggal_akhir',
+        // 'waktu_mulai',
+        // 'waktu_akhir',
+        // 'status_id',
     ];
     public function eventstatus()
     {
