@@ -40,7 +40,7 @@
         @can('galeri-index')
         <li class="nav-item">
             <a href="{{route('galeri')}}" class="mininav-toggle nav-link {{ Route::is('galeri') ? 'active' : ''  }}" id="menuGaleri"><i class="bi bi-images fs-5 me-2"></i>
-                <span class="nav-label ms-1">Galeri</span>
+                <span class="nav-label ms-1">Galeri Gambar</span>
             </a>
         </li>
         @endcan

@@ -57,7 +57,7 @@ Route::group(['middleware' => ['auth', 'verified']], function () {
     Route::get('/galeri', [App\Http\Controllers\GaleriController::class, 'index'])->name('galeri');
     Route::post('/galeri', [App\Http\Controllers\GaleriController::class, 'simpan'])->name('galeri.simpan');
     Route::put('/galeri/{id}', [App\Http\Controllers\GaleriController::class, 'update'])->name('galeri.update');
-    Route::delete('/galeri/{id}', [App\Http\Controllers\GaleriController::class, 'hapus'])->name('galeri.hapus');
+    // Route::delete('/galeri/{id}', [App\Http\Controllers\GaleriController::class, 'hapus'])->name('galeri.hapus');
    
     //tim kerja
     Route::get('/tim', [App\Http\Controllers\TimController::class, 'index'])->name('tim');
