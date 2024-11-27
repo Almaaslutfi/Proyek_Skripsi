@@ -19,7 +19,7 @@
         @can('user-index')
         <li class="nav-item">
             <a href="{{route('user-index')}}" class="mininav-toggle nav-link {{ Route::is('user-index') ? 'active' : ''  }}" id="menuUser"><i class="bi bi-people-fill fs-5 me-2"></i>
-                <span class="nav-label ms-1">User Pengguna</span>
+                <span class="nav-label ms-1">User</span>
             </a>
         </li>
         @endcan
