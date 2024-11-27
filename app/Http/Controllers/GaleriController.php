@@ -51,7 +51,7 @@ class GaleriController extends Controller
         // dd($request->all());
         Galeri::create($data);
 
-        return back()->with('status', 'Galeri gambar berhasil dibuat!');
+        return back()->with('status', 'Galeri berhasil dibuat!');
     }
 
     public function update(Request $request, $id)

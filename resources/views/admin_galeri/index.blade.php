@@ -5,7 +5,7 @@
     <div class="d-flex flex-column m-3">
         <div class="card bg-transparent">
             <p class="text-white fs-5">Galeri</p>
-            <h3 class="text-white" class="fw-bold">Data Galeri Gambar</h3>
+            <h3 class="text-white" class="fw-bold">Data Galeri</h3>
         </div>
        
             <div class="content__boxed">

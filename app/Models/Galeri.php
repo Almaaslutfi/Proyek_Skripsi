@@ -8,8 +8,8 @@ use Illuminate\Database\Eloquent\Model;
 class Galeri extends Model
 {
     use HasFactory;
-    // protected $table = 'galeri';
-    // protected $guarded = ['id'];
+    protected $table = 'galeri';
+    protected $guarded = ['id'];
 
     // protected static function boot(){
     //     parent::boot();
