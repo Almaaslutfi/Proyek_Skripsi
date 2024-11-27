@@ -37,7 +37,7 @@ Route::group(['middleware' => ['auth', 'verified']], function () {
     Route::get('/user', [App\Http\Controllers\UserController::class, 'index'])->name('user-index');
     Route::post('/user', [App\Http\Controllers\UserController::class, 'create'])->name('user-create');
     Route::patch('/user/update/{id}', [App\Http\Controllers\UserController::class, 'update'])->name('user-update');
-    Route::delete('/user/delete/{id}', [App\Http\Controllers\UserController::class, 'delete'])->name('user-delete');
+    // Route::delete('/user/delete/{id}', [App\Http\Controllers\UserController::class, 'delete'])->name('user-delete');
     
     
     // artikel
