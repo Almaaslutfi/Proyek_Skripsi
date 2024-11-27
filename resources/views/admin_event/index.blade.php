@@ -4,7 +4,7 @@
 <div class="container">
     <div class="d-flex flex-column m-3">
         <div class="card bg-transparent">
-            <p class="text-white fs-5">Event acara</p>
+            <p class="text-white fs-5">Event</p>
             <h3 class="text-white" class="fw-bold">Data Event</h3>
         </div>
        

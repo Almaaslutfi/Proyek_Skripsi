@@ -33,7 +33,7 @@
         @can('event-index')
         <li class="nav-item">
             <a href="{{route('event')}}" class="mininav-toggle nav-link {{ Route::is('event') ? 'active' : ''  }}" id="menuEvent"><i class="bi bi-calendar-event fs-5 me-2"></i>
-                <span class="nav-label ms-1">Event acara</span>
+                <span class="nav-label ms-1">Event</span>
             </a>
         </li>
         @endcan

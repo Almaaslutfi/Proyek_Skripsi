@@ -51,7 +51,7 @@ Route::group(['middleware' => ['auth', 'verified']], function () {
     Route::get('/event', [App\Http\Controllers\EventController::class, 'index'])->name('event');
     Route::post('/event', [App\Http\Controllers\EventController::class, 'simpan'])->name('event.simpan');
     Route::put('/event/{id}', [App\Http\Controllers\EventController::class, 'update'])->name('event.update');
-    // Route::delete('/event/{id}', [App\Http\Controllers\EventController::class, 'hapus'])->name('event.hapus');
+    Route::delete('/event/{id}', [App\Http\Controllers\EventController::class, 'hapus'])->name('event.hapus');
 
     //galeri
     Route::get('/galeri', [App\Http\Controllers\GaleriController::class, 'index'])->name('galeri');
