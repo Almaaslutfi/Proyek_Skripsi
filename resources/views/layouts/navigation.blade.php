@@ -54,7 +54,7 @@
         @can('tim-index')
         <li class="nav-item">
             <a href="{{ route('tim') }}" class="mininav-toggle nav-link {{ Route::is('tim') ? 'active' : ''  }}" id="menuTim"><i class="bi bi-person-vcard fs-5 me-2"></i>
-                <span class="nav-label ms-1">Tim Kerja Kantor</span>
+                <span class="nav-label ms-1">Tim Kerja</span>
             </a>
         </li>
         @endcan
