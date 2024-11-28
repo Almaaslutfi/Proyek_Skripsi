@@ -63,7 +63,7 @@ Route::group(['middleware' => ['auth', 'verified']], function () {
     Route::get('/tim', [App\Http\Controllers\TimController::class, 'index'])->name('tim');
     Route::post('/tim', [App\Http\Controllers\TimController::class, 'simpan'])->name('tim.simpan');
     Route::put('/tim/{id}', [App\Http\Controllers\TimController::class, 'update'])->name('tim.update');
-    Route::delete('/tim/{id}', [App\Http\Controllers\TimController::class, 'hapus'])->name('tim.hapus');
+    // Route::delete('/tim/{id}', [App\Http\Controllers\TimController::class, 'hapus'])->name('tim.hapus');
 
     // permission
     Route::post('/permission', [App\Http\Controllers\PermissionControler::class, 'create'])->name('permission-create');

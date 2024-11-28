@@ -5,7 +5,7 @@
     <div class="d-flex flex-column m-3">
         <div class="card bg-transparent">
             <p class="text-white fs-5">Tim Kerja</p>
-            <h3 class="text-white" class="fw-bold">Data Tim Kerja</h3>
+            <h3 class="text-white" class="fw-bold">Data Tim Kerja Kantor</h3>
         </div>
        
             <div class="content__boxed">

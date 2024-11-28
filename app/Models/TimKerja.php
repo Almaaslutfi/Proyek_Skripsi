@@ -9,7 +9,7 @@ class TimKerja extends Model
 {
     use HasFactory;
 
-    protected $table = 'tim_kerja';
+    // protected $table = 'tim_kerja';
 
-    protected $guarded = ['id'];
+    // protected $guarded = ['id'];
 }

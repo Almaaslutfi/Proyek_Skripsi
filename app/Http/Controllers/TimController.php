@@ -48,7 +48,7 @@ class TimController extends Controller
 
         TimKerja::create($data);
 
-        return back()->with('status', 'Tim Kerja berhasil dibuat!');
+        return back()->with('status', 'Tim Kerja kantor berhasil dibuat!');
     }
 
     public function update(Request $request, $id)
