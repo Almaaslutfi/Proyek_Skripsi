@@ -9,7 +9,7 @@
                 @csrf
                 <div class="modal-body">
                     <div class="d-flex flex-column mb-3">
-                        <label for="namarole">Navigation akses</label>
+                        <label for="namarole">Navigation</label>
                         <select name="addnavigasi" id="addnavigasi" class="form-control">
                             @foreach ($allnavigasi as $navigasi)
                                 <option value="{{ $navigasi->id }}">{{ $navigasi->view }}</option>

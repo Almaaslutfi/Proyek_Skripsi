@@ -17,7 +17,7 @@ class PermissionControler extends Controller
         // ]);
 
         $data = [
-            // 'navigation_id' => $request->addnavigasi,
+            'navigation_id' => $request->addnavigasi,
             'view' => $request->addpermission,
             'name' => $request->addpermission
         ];

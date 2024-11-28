@@ -6,7 +6,7 @@
         <div class="d-flex flex-column m-3">
             <div class="card bg-transparent">
                 <p class="text-white fs-5">Role</p>
-                <h3 class="text-white" class="fw-bold">Data Role akses</h3>
+                <h3 class="text-white" class="fw-bold">Data Role</h3>
             </div>
             <div class="content__boxed">
                 <div class="content__wrap">
