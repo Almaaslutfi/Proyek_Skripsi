@@ -66,7 +66,7 @@ Route::group(['middleware' => ['auth', 'verified']], function () {
     Route::delete('/tim/{id}', [App\Http\Controllers\TimController::class, 'hapus'])->name('tim.hapus');
 
     // permission
-    Route::post('/permission', [App\Http\Controllers\PermissionControler::class, 'create'])->name('permission-create');
+    // Route::post('/permission', [App\Http\Controllers\PermissionControler::class, 'create'])->name('permission-create');
 
     // role
     Route::get('/role', [App\Http\Controllers\RoleController::class, 'index'])->name('role-index');

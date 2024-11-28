@@ -47,7 +47,7 @@
         @can('role-index')
         <li class="nav-item">
             <a href="{{ route('role-index') }}" class="mininav-toggle nav-link {{ Route::is('role-index') ? 'active' : ''  }}" id="menuRole"><i class="bi bi-screwdriver fs-5 me-2"></i>
-                <span class="nav-label ms-1">Role Permission</span>
+                <span class="nav-label ms-1">Role Permission akses</span>
             </a>
         </li>
         @endcan

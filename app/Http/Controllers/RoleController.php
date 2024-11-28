@@ -47,7 +47,7 @@ class RoleController extends Controller
         $role->permissions()->sync($request->permission_id);
         Artisan::call('optimize:clear');
 
-        return redirect()->back()->with('status', 'Permissions updated successfully!');
+        return redirect()->back()->with('status', 'Permissions akses updated successfully!');
     }
     public function delete($id)
     {

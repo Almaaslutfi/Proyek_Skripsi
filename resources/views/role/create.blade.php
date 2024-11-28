@@ -15,7 +15,7 @@
                 @csrf
                 <div class="modal-body">
                     <div class="d-flex flex-column mb-3">
-                        <label for="namarole">Nama role</label>
+                        <label for="namarole">Nama role akses</label>
                         <input type="text" id="namarole" name="nama" id="" class="form-control">
                     </div>
                 </div>
